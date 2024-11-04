@@ -1,0 +1,95 @@
+.flip-card{
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin-left: 60px;
+    padding: 30px;
+    perspective: 1000px;
+}
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.3);
+}
+.flip-card-front,.flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-card-front{
+    background: #bbb;
+    color: black;
+}
+.flip-card-back{
+    background: #e3e3e3;
+    transform: rotateY(180deg);
+}
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+.fa{
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa-facebook{
+    background: #1e5ec4;
+    color: wheat;
+}
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+.fa-youtube{
+    background: #bb0000;
+    color: wheat;
+}
+.fa-snapchat-ghost{
+    background: yellow;
+    color: white;
+    text-shadow:  -1px 0 black,0 1px black,1px 0 black,-1px black;
+}
+.fa:hover{
+    opacity: 0.7;
+}
+.Tittle{
+    text-align: center;
+}
+body{
+    background-image: url(Background.jpg);
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
